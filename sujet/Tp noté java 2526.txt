@@ -1,0 +1,65 @@
+Il ne faut pas vendre la peau de l'ours avant de l'avoir tué.
+
+Contexte
+Pour avoir le droit de chasser, un chasseur doit avoir un fusil et au moins un chien.
+Chasser prend du temps (entre 1 et 5 secondes)
+Les chiens permettent d'avoir plus de chance de ne pas revenir bredouille de la chasse.
+1 chien => 5%
+2 chiens => +3%
+4 chiens => +8%
+7 chiens => +10%
+A l'armurerie, un chasseur peut acheter un fusil pour 4 brouzoufs.
+Au chenil, un chasseur peut acheter un chien pour 2 brouzoufs.
+Chez le fourreur, un chasseur peut
+Contracter un prêt (entre 6 et 12 brouzoufs)
+Vendre un ou des peaux d'ours (qualité basse 1, moyenne 3 et haute 5)
+Rembourser tout ou une partie de son prêt.
+Toute les 5 secondes, tous les prêts actifs sont incrémentés de 1 brouzoufs. 
+Si le montant du prêt atteint 18, le chasseur est banni.
+
+Un chasseur est banni si :
+Son prêt atteint 18 brouzoufs ou plus
+S'il part chasser sans fusil ou sans chien
+S'il tente de falsifier/fabriquer/dupliquer des brouzoufs, des fusils, des chiens ou des ours morts
+S'il tente de modifier son identité
+S'il tente de chasser à plusieurs endroits en même temps
+
+Un chasseur banni :
+Perd son fusil, ses chiens, ses ours morts, ses brouzoufs
+Ne peut plus retourner au village ou partir chasser
+
+Chaque achat à l'armurerie, le chenil prends 1 seconde.
+Chaque vente au fourreur prend 1 seconde.
+Chaque remboursement de prêt au fourreur prend 1 seconde.
+Chaque signature de prêt prend 0 seconde.
+Il ne peut y avoir qu'un seul chasseur à la fois chez le fourreur, l'armurerie ou le chenil.
+Un chasseur peut attendre indéfiniment dans une file, ou bien définir un temps limite avant de quitter la file.
+
+Le code sur GitHub ClassRoom dans la branche master.
+
+Un README.MD avec le nom des personnes du groupe et une explication de vos choix techniques et conceptuels.
+
+Un diagramme de classe au format PlantUml (la génération via IA est autorisée)
+
+Objectif
+Implémenter une mécanique permettant aux chasseurs :
+de contracter un prêt
+d'acheter un fusil
+d'acheter au minimum un chien
+de partir chasser
+de vendre les peaux d'ours chassés pour rembourser leur prêt
+obtenir la somme de 50 brouzoufs
+
+Objectif
+Concevoir différents types de chasseurs, avec des comportements distincts.
+
+Chasseurs spécialisés
+Le prêteur : Prête son chien et son fusil contre des brouzoufs, dés qu'il a remboursé son prêt.
+Les jumeaux : Un chasseur qui est en réalité deux chasseurs jumeaux, ils mutualisent leur fusil, leurs chiens, leur prêt et leurs brouzoufs
+Le faussaire : Trempe les peaux d'ours dans une solution miracle qui fait croire que la qualité est meilleure.
+Le citadin : Fait la queue pour les autres chasseurs et revend toutes leurs peaux mais prend une commission.
+
+Contraintes
+Utilisation du DP Strategy pour implémenter ses spécialisations.
+
+
