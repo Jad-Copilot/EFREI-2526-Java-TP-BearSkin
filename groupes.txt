@@ -18,7 +18,7 @@
 - Wissam SHAABAN
 
 ## tp-sellbearskin-jad-alone
-- (Groupe seul - à vérifier)
+- (REPO EXEMPLE - Jad)
 
 ## tp-sellbearskin-kikou974
 - David CHOCHO
